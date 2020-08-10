@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <link rel="icon" href="/images/logos/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
@@ -13,37 +14,65 @@
 
 <body>
 
-    <nav>
-        <div class="container">
-            <a href="/index.html" class=logo></a>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="views/projects.html">Projects</a></li>
-                <li><a href="views/resume.html">Resume</a></li>
-                <li><a href="views/about.html">About</a></li>
-            </ul>
+    <nav class="bg-gray-700">
+        <div class="flex items-center justify-between flex-wrap max-w-screen-lg p-6 m-auto">
+            <div class="flex items-center flex-shrink-0 text-white w-40">
+                <a href="/index.html"><img src="../images/logos/Sherryk.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full block lg:flex lg:items-center lg:w-auto">
+                <div class="text-lg lg:flex-grow">
+                    <a href="/views/projects.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                        Projects
+                    </a>
+                    <a href="/views/resume.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                        Resume
+                    </a>
+                    <a href="/views/about.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+                        About
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <header>
-        <h1>home</h1>
-    </header>
 
-    <main>
-        <h2>I'm Sherry</h2>
+    <main class="bg-gray-400">
+        <div class="max-w-screen-lg  m-auto ">
+            <h2>I'm Sherry</h2>
+            <p>Welcom to my page</p>
+        </div>
+
     </main>
 
-    <footer class="container">
-        <div class="myCats">
-            <div class="chypre"></div>
-            <div class="maomao"></div>
+    <footer class="bg-gray-200 py-10">
+
+        <div class="max-w-screen-lg flex justify-between m-auto px-6">
+            <div class="myCats flex">
+                <div class="chypre w-20 h-20 bg-no-repeat bg-cover bg-center rounded-full mr-6"></div>
+                <div class="maomao w-20 h-20 bg-no-repeat bg-cover bg-center rounded-full"></div>
+            </div>
+
+            <div class="copyRight self-end text-gray-700">&copy;2020 Sherry K &hearts;</div>
+
+            <ul class="flex text-3xl text-gray-700 self-end">
+                <li><a href="#"><span class="mdi mdi-linkedin mr-2"></span></a></li>
+                <li><a href="https://github.com/kbingjie" target="blank"><span class="mdi mdi-github mr-2"></span></a>
+                </li>
+                <li><a href="mailto:kbingjie@gmail.com"><span class="mdi mdi-email mr-2"></span></a></li>
+            </ul>
         </div>
-        <div class="copyRight">&copy;2020 Sherry K &hearts;</div>
-        <ul>
-            <li><a href="#"><span class="mdi mdi-linkedin"></span></a></li>
-            <li><a href="#"><span class="mdi mdi-github"></span></a></li>
-            <li><a href="#"><span class="mdi mdi-email"></span></a></li>
-        </ul>
     </footer>
 </body>
 
