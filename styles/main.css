@@ -1,7 +1,54 @@
-.chypre { 
-    background-image: url(../images/chypre_icon.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,300&display=swap');
+
+
+
+.me { 
+    background-image: url(../images/me.jpg);
 }
 
-.maomao { 
-    background-image: url(../images/maomao_icon.jpg);
+html {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+
+    overflow: hidden;
+    height: 100%;
 }
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+.my-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.image-container {
+    position: relative;
+}
+.image-container img {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    z-index: 3;
+}
+
+.image-container #close {
+    position: absolute;
+    top: 50px;
+    right: 22%;
+    z-index: 4;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.image-click {
+    cursor: pointer;
+}
+
