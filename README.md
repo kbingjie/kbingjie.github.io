@@ -7,3 +7,4 @@
 - Responsive Design
 - Google Fonts
 - Material Design Icons
+- Tailwind CSS

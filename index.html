@@ -14,31 +14,26 @@
 <body>
 
     <nav>
-        <div class="flex items-center justify-between flex-wrap max-w-screen-xl py-16 px-6 m-auto">
-            <div class="flex items-center flex-shrink-0 text-white w-24 ml-3">
+        <div class="flex items-center justify-between flex-wrap max-w-screen-xl py-6 md:py-16 px-6 m-auto">
+            <div class="flex items-center flex-shrink-0 w-16 md:w-24">
                 <a href="/index.html"><img src="../images/logos/s.png" alt="logo"></a>
             </div>
-            <div class="block lg:hidden">
+            <div class="nav-toggler block md:hidden">
                 <button
-                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
+                    class="mdi mdi-menu text-gray-700 text-xl border rounded border-gray-400 px-2 py-0 focus:outline-none"></button>
             </div>
-            <div class="w-full block lg:flex lg:items-center lg:w-auto">
-                <div class="text-lg lg:flex-grow">
+            <div class="navbar w-full block md:flex md:items-center md:w-auto hidden">
+                <div class="text-lg md:flex-grow">
                     <a href="/views/projects.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-700 mr-4">
+                        class="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-gray-700 mr-4">
                         Projects
                     </a>
                     <a href="/views/resume.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-700 mr-4">
+                        class="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-gray-700 mr-4">
                         Resume
                     </a>
                     <a href="/views/about.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-700">
+                        class="block mt-4 md:inline-block md:mt-0 text-gray-500 hover:text-gray-700">
                         About
                     </a>
                 </div>
@@ -47,56 +42,69 @@
     </nav>
 
 
-    <main class="max-w-screen-xl m-auto px-6">
+    <main class="max-w-screen-xl m-auto px-6 pt-2">
 
-        <div class="text-gray-700">
-            <div class="text-3xl">Hi, I'm Sherry!</div>
+        <div class="text-gray-900">
+            <div class="flex">
+                <div class="me w-20 h-20 bg-no-repeat bg-cover bg-center rounded-full mr-6"></div>
+                <div class="text-3xl self-center">Hi, I'm Sherry!</div>
+            </div>
+
             <div class="my-6">I'm looking for a Front-End programmer opportunity where I can contribute my design and
                 business thinking to the team to buld impactful products</div>
         </div>
 
         <div class="grid md:grid-cols-3 gap-4">
+
             <!-- first row -->
-            <div class="md:col-span-2 md:row-span-2 mt-3"><img src="/images/projects/myJourney.jpg" alt="my journeys"
-                    class="rounded">
+            <div class="md:col-span-2 md:row-span-2 mt-3 project-container">
+                <a href="https://myjourneys.kbingjie.com/"><img src="/images/projects/myJourney.jpg" alt="my journeys"
+                        class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
-            <div class="col-span-1 mt-3 transition duration-500 ease-in-out"><img src="/images/projects/ZooProject.jpg"
-                    alt="Zoo Project" class="rounded">
+
+
+            <div class="col-span-1 mt-3 project-container">
+                <a href="https://kbingjie.com/Zoo-Website/"><img src="/images/projects/ZooProject.jpg" alt="Zoo Project"
+                        class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
-            <div class="col-span-1"><img src="/images/projects/skincareShopping.jpg" alt="Skincare Project"
-                    class="rounded">
+            <div class="col-span-1 project-container">
+                <a href="https://github.com/kbingjie/skincare-shopping"><img src="/images/projects/skincareShopping.jpg"
+                        alt="Skincare Project" class="rounded project-img opacity-50 transition duration-500 ease"></a>
             </div>
 
             <!-- second row -->
-            <div class="col-span-1 row-span-2"><img src="/images/projects/infinitescroll.png" alt="infinitescroll"
-                    class="rounded">
+            <div class="col-span-1 row-span-2 project-container">
+                <a href="https://github.com/kbingjie/InfiniteScroll"><img src="/images/projects/infinitescroll.png"
+                        alt="infinitescroll" class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
-            <div class="col-span-1 row-span-1 h-auto"><img src="/images/projects/wordguessgame.png" alt="wordguessgame"
-                    class="rounded">
+            <div class="col-span-1 row-span-1 h-auto project-container"><a
+                    href="https://kbingjie.com/wordGuessGame/"><img src="/images/projects/wordguessgame.png"
+                        alt="wordguessgame" class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
-            <div class="col-span-1 row-span-3"><img src="/images/projects/exchangeRateCal.png" alt="exchangeRateCal"
-                    class="rounded">
+            <div class="col-span-1 row-span-3 project-container"><a
+                    href="https://kbingjie.com/practice-rate-calculator/"><img
+                        src="/images/projects/exchangeRateCal.png" alt="exchangeRateCal"
+                        class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
 
 
-            <div class="col-span-1 row-span-3"><img src="/images/projects/movieSeats.png" alt="movieSeats"
-                    class="rounded">
+            <div class="col-span-1 row-span-3 project-container"><a
+                    href="https://kbingjie.com/Practice-movieSeats/"><img src="/images/projects/movieSeats.png"
+                        alt="movieSeats" class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
-            <div class="col-span-1 row-span-2"><img src="/images//projects//weatherAPP.png" alt="weatherAPP"
-                    class="rounded">
+            <div class="col-span-1 row-span-2 project-container"><a href="https://github.com/kbingjie/weatherAPP"><img
+                        src="/images//projects//weatherAPP.png" alt="weatherAPP"
+                        class="rounded project-img opacity-75 transition duration-500 ease"></a>
             </div>
         </div>
 
     </main>
 
-    <footer class="py-20 px-6 mt-3">
-
-        <div class="max-w-screen-xl flex justify-between m-auto">
-            <div class="me w-20 h-20 bg-no-repeat bg-cover bg-center rounded-full mr-6"></div>
-
-            <div class="copyRight self-end text-gray-500">&copy;2020 Sherry K &hearts;</div>
-
-            <ul class="flex text-4xl text-gray-500 self-end">
+    <footer class="py-10 md:py-20 px-6 mt-3">
+        <div class="flex justify-evenly md:justify-between">
+            <div class="me w-20 h-20 bg-no-repeat bg-cover bg-center rounded-full"></div>
+            <div class="text-gray-500 hidden md:block self-center">&copy;2020 Sherry K &hearts;</div>
+            <ul class="flex text-4xl self-center text-gray-500">
                 <li><a href="#"><span class="mdi mdi-linkedin mr-2  hover:text-gray-700"></span></a></li>
                 <li><a href="https://github.com/kbingjie" target="blank"><span
                             class="mdi mdi-github mr-2  hover:text-gray-700"></span></a>
@@ -106,6 +114,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="/scripts/app.js"></script>
 </body>
 
 </html>
