@@ -12,7 +12,7 @@ projects.forEach(project => {
     const singleHtml = `
     <div class="md:flex flex-1 mb-16">
     <div class="md:w-2/4 px-6 project-container">
-        <a href="${project.liveDemo}"><img src="..${project.image}"
+        <a href="${project.liveDemo ? project.liveDemo : '#'}"><img src="..${project.image}"
                 alt="${project.title}"
                 class="rounded md:object-cover md:object-center md:w-full md:h-full project-img opacity-75 transition duration-500 ease"></a>
     </div>
