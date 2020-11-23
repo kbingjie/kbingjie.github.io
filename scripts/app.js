@@ -14,7 +14,7 @@ projects.forEach(project => {
     <div class="md:w-2/4 px-6 project-container">
         <a href="${project.liveDemo ? project.liveDemo : '#'}"><img src="..${project.image}"
                 alt="${project.title}"
-                class="rounded md:object-cover md:object-center md:w-full md:h-full project-img opacity-75 transition duration-500 ease"></a>
+                class="rounded md:object-cover md:object-center md:w-full md:h-full project-img transition duration-500 ease"></a>
     </div>
 
     <div class="px-10 pt-6 md:pt-0 md:w-2/4">

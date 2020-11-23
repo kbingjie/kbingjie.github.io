@@ -12,8 +12,12 @@ body {
     height: 100%;
     overflow: auto;
 }
-/* project image hover effect */
-.project-container:hover .project-img {opacity: 1;}
+/* project image hover effect ,index */
+#index .project-container:hover .project-img {opacity: 1;}
+
+/* project image hover effect ,projects */
+#top .project-container:hover .project-img {opacity: 0.75;}
+
 
 /* footer */
 .me {background-image: url(../images/me.jpg);}
