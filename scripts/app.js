@@ -1,6 +1,6 @@
-import projects from 'projects.js';
-import works from 'work.js'
-import courses from 'educationClass.js'
+import projects from './projects.js';
+import works from './work.js'
+import courses from './educationClass.js'
 
 // Toggle navbar
 $('.nav-toggler').on('click', () => {
@@ -11,7 +11,7 @@ $('.nav-toggler').on('click', () => {
 let projectsHtml = "";
 
 projects.forEach(project => {
-    const singleHtml = `
+    const singleProjectHtml = `
     <div class="md:flex flex-1 mb-16">
     <div class="md:w-2/4 px-6 project-container">
         <a href="${project.liveDemo ? project.liveDemo : '#'}"><img src="..${project.image}"
@@ -30,7 +30,7 @@ projects.forEach(project => {
     </div>
 </div>
     `;
-    projectsHtml += singleHtml;
+    projectsHtml += singleProjectHtml;
 })
 
 $('#projects-container').html(projectsHtml);
@@ -47,7 +47,7 @@ works.forEach(work => {
         }
     })
 
-    const singleHtml = `                
+    const singleWorkHtml = `                
     <div id="work-three" class="my-6">
     <div class="year text-xs">06/2012 - 12/2013</div>
     <div class="title font-bold">${work.title}@ ${work.company}</div>
@@ -55,7 +55,7 @@ works.forEach(work => {
     <ul class="list-disc pl-10 mt-3">${des}
     </ul>
     </div>`
-    worksHtml += singleHtml
+    worksHtml += singleWorkHtml
 })
 
 $('#work').html(worksHtml);
