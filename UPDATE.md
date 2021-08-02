@@ -1,3 +1,5 @@
+### 08/2/2021
+ - Updated resume page with js data.
 ### 08/20/2020
  - Added projects.js data instead of hard coded projects page
  - Added jQuery, rewrote app.js with jQuery
