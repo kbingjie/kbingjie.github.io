@@ -1,4 +1,6 @@
 import projects from '../projects.js';
+import works from '../work.js'
+import courses from '../educationClass.js'
 
 // Toggle navbar
 $('.nav-toggler').on('click', () => {
@@ -32,3 +34,39 @@ projects.forEach(project => {
 })
 
 $('#projects-container').html(projectsHtml);
+
+
+// Resume Page content
+let worksHtml = '<h1 class="text-3xl font-bold my-3">WORK</h1>'
+works.forEach(work => {
+    let workDesArr = work.jobDescription.split(".")
+    let des = ""
+    workDesArr.forEach(single => {
+        if (single.length > 0) {
+            des += `<li>${single}</li>`
+        }
+    })
+
+    const singleHtml = `                
+    <div id="work-three" class="my-6">
+    <div class="year text-xs">06/2012 - 12/2013</div>
+    <div class="title font-bold">${work.title}@ ${work.company}</div>
+    <div class="location italic text-xs">${work.location}</div>
+    <ul class="list-disc pl-10 mt-3">${des}
+    </ul>
+    </div>`
+    worksHtml += singleHtml
+})
+
+$('#work').html(worksHtml);
+
+
+// Education Part
+let coursesDetail = ""
+courses.forEach(course => {
+    const singleCourse = `
+    <li>${course.name} - ${course.keywords}</li>`
+    coursesDetail += singleCourse
+})
+
+$('#courses-list').html(coursesDetail);
