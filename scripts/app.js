@@ -1,6 +1,6 @@
-import projects from '../projects.js';
-import works from '../work.js'
-import courses from '../educationClass.js'
+import projects from 'projects.js';
+import works from 'work.js'
+import courses from 'educationClass.js'
 
 // Toggle navbar
 $('.nav-toggler').on('click', () => {
