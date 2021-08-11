@@ -13,7 +13,7 @@ export default [
         company: "Happy Alliance",
         location: "CHENGDU, CN",
         jobDescription: "Provided customer service, collaborated with development team to identify complex issues and to find solutions for customers with accuracy. Monitored user data daily to identify unusual game activities, and alerted development team. Analyzed client’s software requirements and wrote functional requirements designs for development and design team. Provided feedback to development team with respect to game software and management tools. Performed project management activates by interacting with managers, marketing, and development team regarding project resources, status, and timeline. Made sure project updating plan and monthly game event plan executed accurately. Validated monthly game revenue data and delivered reports to stakeholders. Created configuration documentation for project monthly events and new functions. Assisted client and development team with software version releases for multiple markets. Performed User Acceptance Testing to verify build before delivery.",
-        date: "06/2015 - 08/2018"
+        date: "09/2015 - 08/2018"
     },
     {
         id: 3,
