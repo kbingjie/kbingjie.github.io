@@ -49,7 +49,7 @@ works.forEach(work => {
 
     const singleWorkHtml = `                
     <div id="work-three" class="my-6">
-    <div class="year text-xs">06/2012 - 12/2013</div>
+    <div class="year text-xs">${work.date}</div>
     <div class="title font-bold">${work.title}@ ${work.company}</div>
     <div class="location italic text-xs">${work.location}</div>
     <ul class="list-disc pl-10 mt-3">${des}
