@@ -19,5 +19,11 @@ export default [
         id: 4,
         name: "Advanced Software Analysis and Design",
         keywords: "Java, Swift, iOS,OOP, MVC, REST API, SOAP API"
+    },
+    {
+        id: 5,
+        name: "Statistical Machine Learning",
+        keywords: "Navie Bayes, K-means,SVM"
+
     }
 ]
